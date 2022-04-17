@@ -221,6 +221,25 @@ form{
     padding: 10px 0 10px 10px;
 }
 @media screen and (min-width: 320px) and (max-width: 479px){
+    body{
+        display: grid;
+        grid-row: auto;
+        grid-column: auto;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+    header{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    main{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    footer{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
     .logoWhat{
         height: 60px;
         position: fixed;
@@ -427,6 +446,25 @@ form{
     }
 }
 @media screen and (min-width: 480px) and (max-width: 599px){
+    body{
+        display: grid;
+        grid-row: auto;
+        grid-column: auto;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+    header{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    main{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    footer{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
     .logoWhat{
         height: 60px;
         position: fixed;
@@ -633,6 +671,25 @@ form{
     }
 }
 @media screen and (min-width: 600px) and (max-width: 767px){
+    body{
+        display: grid;
+        grid-row: auto;
+        grid-column: auto;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+    header{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    main{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    footer{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
     .logoWhat{
         height: 65px;
         position: fixed;
@@ -839,6 +896,25 @@ form{
     }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px){
+    body{
+        display: grid;
+        grid-row: auto;
+        grid-column: auto;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+    header{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    main{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    footer{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
     .logoWhat{
         height: 65px;
         position: fixed;
@@ -1026,6 +1102,25 @@ form{
     }
 }
 @media screen and (min-width: 1024px) {
+    body{
+        display: grid;
+        grid-row: auto;
+        grid-column: auto;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+    header{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    main{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    footer{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
     .logoWhat{
         height: 70px;
         position: fixed;
