@@ -4,11 +4,11 @@
 }
 header{
     height: auto;
-    background-color: #48887A;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    background: linear-gradient(#48887A 0%,#F1F1F1 90% );
 }
 .logo{
     height: 150px;
@@ -35,7 +35,7 @@ header{
 }
 .menu a{
     text-decoration: none;
-    color: #F1F1F1;
+    color: #7E7E7E;
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -73,7 +73,7 @@ h2{
     bottom: 30%;
 }
 footer{
-    background-color: #C5DED8;
+    background: linear-gradient(#F1F1F1 0%, #48887A 95% );
     height: auto;
     text-align: center;
     padding-top: 10px;
@@ -82,6 +82,12 @@ footer{
     display: inline-block;
     font-size: 18px;
 }
+.menuFooter a{
+    text-decoration: none;
+    color: #7E7E7E;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 5px;
+}
 .redesLogos{
     padding: 10px 0 10px 0;
     height: 30px;
@@ -89,7 +95,9 @@ footer{
 .pieDePagina{
     padding: 10px 0 10px 0;
     font-size: 17px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #d6d6d6;
+
 } 
 .infoHome{
     padding: 10px;
