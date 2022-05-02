@@ -1,129 +1,214 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Garden Sushi</title>
     <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../estilos/estilos.css">
 
 </head>
+
 <body>
-    <header>
-        <div>
-            <img src="../img/logo.png" alt="Logo Garden Sushi" class="logo">
+
+    <nav class="navbar navbar-expand-sm navbar-light bg-light menu">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse fw-bold container text-center" id="navbarTogglerDemo01">
+                <a class="navbar-brand" href="#"><img src="../img/logo.png" class="logo" alt="logo"></a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link shadow rounded" aria-current="page" href="../index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link shadow rounded" href="#">PRODUCTOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link shadow rounded" href="./bar.html">BAR</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link shadow rounded" href="./galeria.html">GALERÍA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link shadow rounded" href="./contacto.html">CONTACTO</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <nav>
-            <ul class="menu">
-                <li><a href="../index.html">HOME</a></li>
-                <li><a href="#">PRODUCTOS</a></li>
-                <li><a href="./bar.html">BAR</a></li>
-                <li><a href="./galeria.html">GALERÍA</a></li>
-                <li><a href="./contacto.html">CONTACTO</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main class="productosMain">
+    </nav>
+
+
+    <main>
         <h1>GARDEN <span>SUSHI</span></h1>
-        <h2>PRODUCTOS</h2>
-        <section class="variedades">
-            <h3>VARIEDADES</h3>
-            <article class="variedades1">
-                <img src="../img/Hot Roll.jpeg" alt="Hot Roll">
-                <h4>Hot Roll</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur sunt</p>
-            </article>
-            <article class="variedades2">
-                <img src="../img/Nigiri.jpeg" alt="Nigiri">
-                <h4>Nigiri</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, earum deserunt</p>
-            </article>
-            <article class="variedades3">
-                <img src="../img/Maki.jpeg" alt="Maki">
-                <h4>Maki</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod cupiditate </p>
-            </article>
+
+        <H2>PRODUCTOS</H2>
+
+        <section class="container">
+            <div class="row">
+                <article class="col">
+                    <div class="card bg-transparent text-center">
+                        <img src="../img/Hot Roll.jpeg" class="card-img-top" alt="Hot Roll">
+                        <div class="card-body">
+                            <h5 class="card-title">Hot Roll</h5>
+                            <p class="card-text">Nuestros Hot Rolls están rebozados en panko y se caracterizan por ser
+                                piezas muy grandes.</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="col">
+                    <div class="card bg-transparent text-center">
+                        <img src="../img/Maki.jpeg" class="card-img-top" alt="Maki">
+                        <div class="card-body">
+                            <h5 class="card-title">Maki</h5>
+                            <p class="card-text">Contamos con makis vegetarianos y veganos, además de los clásicos con
+                                pescado.</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="col">
+                    <div class="card bg-transparent text-center">
+                        <img src="../img/Nigiri.jpeg" class="card-img-top" alt="Nigiri">
+                        <div class="card-body">
+                            <h5 class="card-title">Nigiri</h5>
+                            <p class="card-text">Nuestros nigiris son de salmón ahumado y queso. También contamos con
+                                versiones vegetarianas y veganas </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <h2>COMBOS</h2>
+
+            <section class="container pb-4">
+                <div class="row">
+                    <article class="col-lg-3 col-md-6">
+                        <div class="card">
+                            <img src="../img/Combo_10.jpeg" class="card-img-top" alt="Combinado 10 piezas">
+                            <div class="card-body">
+                                <h5 class="card-title">10 piezas</h5>
+                                <p class="card-text">También tenemos alternativas vegetarianas y veganas</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">4 Uramakis de camarón, palta y queso</li>
+                                <li class="list-group-item">4 Makis de salmón ahumado, palta y queso</li>
+                                <li class="list-group-item">2 Nigiris de salmón ahumado y queso</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="col-lg-3 col-md-6">
+                        <div class="card">
+                            <img src="../img/Combo_20.jpeg" class="card-img-top" alt="combinado 20 piezas">
+                            <div class="card-body">
+                                <h5 class="card-title">20 piezas</h5>
+                                <p class="card-text">También tenemos alternativas vegetarianas y veganas</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">4 Uramakis de camarón, palta y queso</li>
+                                <li class="list-group-item">4 Makis de salmón ahumado, palta y queso</li>
+                                <li class="list-group-item">4 Hot Rolls de Kani Kama, omelette y queso; 4 de salmón
+                                    ahumado, omelette y queso</li>
+                                <li class="list-group-item">4 Nigiris de salmón ahumado y queso</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="col-lg-3 col-md-6">
+                        <div class="card">
+                            <img src="../img/Combo_30.jpeg" class="card-img-top" alt="combinado 30 piezas">
+                            <div class="card-body">
+                                <h5 class="card-title">30 piezas</h5>
+                                <p class="card-text">También tenemos alternativas vegetarianas y veganas</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">4 Uramakis de camarón, palta y queso; 4 de Kani Kama,
+                                    omelette, palta y queso</li>
+                                <li class="list-group-item">4 Makis de salmón ahumado, palta y queso</li>
+                                <li class="list-group-item">4 Hot Rolls de Kani Kama, omelette y queso; 4 de salmón
+                                    ahumado, omelette y queso; 4 de camarón, omelette, palta y queso</li>
+                                <li class="list-group-item">6 Nigiris de salmón ahumado y queso</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="col-lg-3 col-md-6">
+                        <div class="card">
+                            <img src="../img/Combo_40.jpeg" class="card-img-top" alt="combinado 40 piezas">
+                            <div class="card-body">
+                                <h5 class="card-title">40 piezas</h5>
+                                <p class="card-text">También tenemos alternativas vegetarianas y veganas</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">8 Uramakis de camarón, palta y queso; 4 de Kani Kama,
+                                    omelette, palta y queso</li>
+                                <li class="list-group-item">4 Makis de salmón ahumado, palta y queso</li>
+                                <li class="list-group-item">8 Hot Rolls de Kani Kama, omelette y queso; 4 de salmón
+                                    ahumado, omelette y queso; 4 de camarón, omelette, palta y queso</li>
+                                <li class="list-group-item">8 Nigiris de salmón ahumado y queso</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+
         </section>
-        <section class="combos">
-            <h3>COMBOS</h3>
-            <article class="combos1">
-                <img src="../img/Combo_10.jpeg" alt="Combinado de 10 piezas">
-                <h4>10 piezas</h4>
-                <p>Combinado de 10 piezas que incluye:</p>
-                <ul>
-                    <li>4 Makis de Kani Kama, Omelette y Queso</li>
-                    <li>4 Uramakis de Camarón, Palta y Queso</li>
-                    <li>2 Nigiri de Salmón ahumado</li>
-                </ul>
-            </article>
-            <article class="combos2">
-                <img src="../img/Combo_20.jpeg" alt="Combinado de 20 piezas">
-                <h4>20 piezas</h4>
-                <p>Combinado de 20 piezas que incluye:</p>
-                <ul>
-                    <li>4 Hot Rolls de Kani Kama, Omelette y Queso</li>
-                    <li>4 Uramakis de Camarón, Palta y Queso</li>
-                    <li>4 Hot Rolls de Salmón ahumado, Omelette y Queso</li>
-                    <li>4 Makis de Kani Kama, Omelette, Palta y Queso</li>
-                    <li>4 Nigiri de Salmon ahumado</li>
-                </ul>
-            </article>
-            <article class="combos3">
-                <img src="../img/Combo_30.jpeg" alt="Combinado de 30 piezas">
-                <h4>30 piezas</h4>
-                <p>Combinado de 30 piezas que incluye:</p>
-                <ul>
-                    <li>4 Hot Rolls de Kani Kama, Omelette y Queso</li>
-                    <li>4 Uramakis de Camarón, Palta y Queso</li>
-                    <li>4 Hot Rolls de Salmón ahumado, Omelette y Queso</li>
-                    <li>4 Makis de Kani Kama, Omelette, Palta y Queso</li>
-                    <li>4 Hot Rolls de Camarón, Omelette, Palta y Queso</li>
-                    <li>4 Makis de Salmón ahumado, Palta y Queso</li>
-                    <li>6 Nigiri de Salmon ahumado</li>
-                </ul>
-            </article>
-            <article class="combos4">
-                <img src="../img/Combo_40.jpeg" alt="Combinado de 40 piezas">
-                <h4>40 piezas</h4>
-                <p>Combinado de 40 piezas que incluye:</p>
-                <ul>
-                    <li>8 Hot Rolls de Kani Kama, Omelette y Queso</li>
-                    <li>8 Uramakis de Camarón, Palta y Queso</li>
-                    <li>4 Hot Rolls de Salmón ahumado, Omelette y Queso</li>
-                    <li>4 Makis de Kani Kama, Omelette, Palta y Queso</li>
-                    <li>4 Hot Rolls de Camarón, Omelette, Palta y Queso</li>
-                    <li>4 Makis de Salmón ahumado, Palta y Queso</li>
-                    <li>8 Nigiri de Salmon ahumado</li>
-                </ul>
-            </article>
-        </section>
-        
-        
+
+
+
+
+
         <nav class="whatsapp">
-            <a href="https://l.instagram.com/?u=https%3A%2F%2Fwalink.co%2Fc5eb9c&e=ATNphlVUBK70MUdIhFMDgEzu_LfD5ZN949yofJ6PyCkTBLvMby0jgqO0RWPiThMVh2OfSWhrK0xBXVlX4jELOA&s=1"><img src="../img/logo_what.png" alt="enlace al whatsapp" class="logoWhat"></a>
+            <a href="#"><img src="../img/logo_what.png" alt="enlace al whatsapp" class="logoWhat"></a>
         </nav>
     </main>
+
     <footer>
-        <section>
-            <!--agregar url-->
-            <a href=""><img src="../img/logo_fb.png" alt="enlace a facebook garden_sushi_" class="redesLogos" ></a>
-            <a href="https://www.instagram.com/garden_sushi_/"><img src="../img/logo_ig.png" alt="enlace a instagram garden_sushi_" class="redesLogos"></a>
-            <a href="https://l.instagram.com/?u=https%3A%2F%2Fwalink.co%2Fc5eb9c&e=ATNphlVUBK70MUdIhFMDgEzu_LfD5ZN949yofJ6PyCkTBLvMby0jgqO0RWPiThMVh2OfSWhrK0xBXVlX4jELOA&s=1"><img src="../img/logo_what.png" alt="enlace al whatsapp 3813579607" class="redesLogos"></a>
-        </section>
+
         <nav>
-            <ul class="menuFooter">
-                <li><a href="../index.html">HOME</a></li>
-                <li><a href="#">PRODUCTOS</a></li>
-                <li><a href="./bar.html">BAR</a></li>
-                <li><a href="./galeria.html">GALERÍA</a></li>
-                <li><a href="./contacto.html">CONTACTO</a></li>
+            <ul class="nav justify-content-center fw-bold">
+                <li class="nav-item border border-3 shadow rounded"><a href="../index.html"
+                        class="nav-link link-secondary">HOME</a></li>
+                <li class="nav-item border border-3 shadow rounded"><a href="#"
+                        class="nav-link link-secondary">PRODUCTOS</a></li>
+                <li class="nav-item border border-3 shadow rounded"><a href="./bar.html"
+                        class="nav-link link-secondary">BAR</a></li>
+                <li class="nav-item border border-3 shadow rounded"><a href="./galeria.html"
+                        class="nav-link link-secondary">GALERÍA</a></li>
+                <li class="nav-item border border-3 shadow rounded"><a href="./contacto.html"
+                        class="nav-link link-secondary">CONTACTO</a></li>
             </ul>
         </nav>
-        <div class="pieDePagina">
+
+        <section class="d-flex justify-content-center pt-4">
+            <div>
+                <a href=""><img src="../img/logo_fb.png" alt="enlace a facebook garden_sushi_" class=" img-fluid"></a>
+
+                <a href="https://www.instagram.com/garden_sushi_/"><img src="../img/logo_ig.png"
+                        alt="enlace a instagram garden_sushi_" class=" img-fluid"></a>
+
+                <a
+                    href="https://l.instagram.com/?u=https%3A%2F%2Fwalink.co%2Fc5eb9c&e=ATNphlVUBK70MUdIhFMDgEzu_LfD5ZN949yofJ6PyCkTBLvMby0jgqO0RWPiThMVh2OfSWhrK0xBXVlX4jELOA&s=1"><img
+                        src="../img/logo_what.png" alt="enlace al whatsapp 3813579607" class=" img-fluid"></a>
+            </div>
+        </section>
+        <div class="text-center p-4">
             <p>Garden Sushi</p>
             <p>Yerba Buena, Tucumán</p>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>
