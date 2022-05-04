@@ -1,0 +1,67 @@
+// variables
+$color-title: #48887A;
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.menu{
+    background: linear-gradient($color-title 0%,#F1F1F1 90% );
+}
+main{
+    background-color: #F1F1F1;
+}
+.carousel img{
+    height: 200px;
+}
+h1{
+    font-size: 50px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: $color-title;
+    padding: 10px 0 10px 0;
+    span{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-style: italic;
+        color: #7E7E7E;
+    }
+}
+
+.logoWhat{
+    height: 70px;
+    position: fixed;
+    right: 1%;
+    bottom: 30%;
+}
+footer{
+    background: linear-gradient(#F1F1F1 0%, $color-title 90% );
+    img{
+        height: 25px !important;
+    }
+}
+
+h2{
+    font-size: 30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: $color-title;
+    padding: 10px 0 10px 0;
+}
+.logo{
+    height: 50px;
+    padding: 5px;
+    animation-name: entrada;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+}
+@keyframes entrada{
+    0%{opacity: 0; margin-left: 100%;}
+    100%{opacity: 1; margin-left: 0%;}
+}
+.card{
+    transition: transform 0.9s ease;
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+

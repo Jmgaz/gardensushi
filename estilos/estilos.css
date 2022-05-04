@@ -1,62 +1,101 @@
-*{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
 }
-.menu{
-    background: linear-gradient(#48887A 0%,#F1F1F1 90% );
+
+.menu {
+  background: -webkit-gradient(linear, left top, left bottom, from(#48887A), color-stop(90%, #F1F1F1));
+  background: linear-gradient(#48887A 0%, #F1F1F1 90%);
 }
-main{
-    background-color: #F1F1F1;
+
+main {
+  background-color: #F1F1F1;
 }
-.carousel img{
-    height: 200px;
+
+.carousel img {
+  height: 200px;
 }
-h1{
-    font-size: 50px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-    color: #48887A;
-    padding: 10px 0 10px 0;
+
+h1 {
+  font-size: 50px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  color: #48887A;
+  padding: 10px 0 10px 0;
 }
-h1 span{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-style: italic;
-    color: #7E7E7E;
-    
+
+h1 span {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-style: italic;
+  color: #7E7E7E;
 }
-.logoWhat{
-    height: 70px;
-    position: fixed;
-    right: 1%;
-    bottom: 30%;
+
+.logoWhat {
+  height: 70px;
+  position: fixed;
+  right: 1%;
+  bottom: 30%;
 }
-footer{
-    background: linear-gradient(#F1F1F1 0%, #48887A 90% );
+
+footer {
+  background: -webkit-gradient(linear, left top, left bottom, from(#F1F1F1), color-stop(90%, #48887A));
+  background: linear-gradient(#F1F1F1 0%, #48887A 90%);
 }
-footer img{
-    height: 25px !important;
+
+footer img {
+  height: 25px !important;
 }
-h2{
-    font-size: 30px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-    color: #48887A;
-    padding: 10px 0 10px 0;
+
+h2 {
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  color: #48887A;
+  padding: 10px 0 10px 0;
 }
-.logo{
-    height: 50px;
-    padding: 5px;
-    animation-name: entrada;
-    animation-duration: 5s;
-    animation-iteration-count: 1;
+
+.logo {
+  height: 50px;
+  padding: 5px;
+  -webkit-animation-name: entrada;
+          animation-name: entrada;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
 }
-@keyframes entrada{
-    0%{opacity: 0; margin-left: 100%;}
-    100%{opacity: 1; margin-left: 0%;}
+
+@-webkit-keyframes entrada {
+  0% {
+    opacity: 0;
+    margin-left: 100%;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 0%;
+  }
 }
-.card{
-    transition: transform 0.5s ease;
+
+@keyframes entrada {
+  0% {
+    opacity: 0;
+    margin-left: 100%;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 0%;
+  }
 }
+
+.card {
+  -webkit-transition: -webkit-transform 0.9s ease;
+  transition: -webkit-transform 0.9s ease;
+  transition: transform 0.9s ease;
+  transition: transform 0.9s ease, -webkit-transform 0.9s ease;
+}
+
 .card:hover {
-    transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
+/*# sourceMappingURL=estilos.css.map */
