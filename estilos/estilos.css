@@ -25,7 +25,7 @@ h1 {
 }
 
 h1 span {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-style: italic;
   color: #7E7E7E;
 }
@@ -97,5 +97,19 @@ h2 {
 .card:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.boton, .boton--enviar, .boton--borrar {
+  font-weight: 500;
+  font-size: large;
+  letter-spacing: 1px;
+}
+
+.boton--enviar {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.boton--borrar {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 /*# sourceMappingURL=estilos.css.map */
