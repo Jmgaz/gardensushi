@@ -1,18 +1,40 @@
 // variables
 $color-title-verde: #48887A;
+$color-verde-opaco:#48887aad;
 $color-title-gris: #7E7E7E;
-$font-title-1: Verdana, Geneva, Tahoma, sans-serif;
-$font-title-2: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+$color-blanco: #F1F1F1;
+$font-title-1: palanquin dark;
+$font-title-2: courgette;
+$font-text: kalam;
 
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Hurricane&family=Kalam&family=Palanquin+Dark:wght@500&family=Ramabhadra&family=Shadows+Into+Light&display=swap');
 *{
     padding: 0;
     margin: 0;
 }
+
+
+@keyframes colorMenu{
+    from{background-color:$color-blanco; opacity: 0.2;}
+    to{background-color:$color-verde-opaco; opacity: 1;}
+}
 .menu{
-    background: linear-gradient($color-title-verde 0%,#F1F1F1 90% );
+    background: linear-gradient($color-verde-opaco 0%,$color-blanco 90% );
+    @media only screen and (min-width: 786px){
+        a:hover{
+            border-radius: 5px;
+            animation-name: colorMenu;
+            animation-duration: 1.5s;
+            background-color: $color-verde-opaco;
+        }
+    } 
 }
 main{
-    background-color: #F1F1F1;
+    background: url(../img/logoBG2.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: $color-blanco;
 }
 .carousel img{
     height: 200px;
@@ -37,10 +59,10 @@ h1{
     height: 70px;
     position: fixed;
     right: 1%;
-    bottom: 30%;
+    bottom: 10%;
 }
 footer{
-    background: linear-gradient(#F1F1F1 0%, $color-title-verde 90% );
+    background: linear-gradient($color-blanco 0%, $color-title-verde 90% );
     img{
         height: 25px !important;
     }
@@ -52,10 +74,14 @@ h2{
     text-align: center;
     color: $color-title-verde;
     padding: 10px 0 10px 0;
+    span{
+        font-family: $font-title-2;
+        color: $color-title-gris;
+    }
 }
 @mixin estilo-logo{
-    height: 50px;
-    padding: 5px;
+    height: 60px;
+    padding: 3px;
 }
 .logo{
     @include estilo-logo;
@@ -63,11 +89,15 @@ h2{
     animation-duration: 5s;
     animation-iteration-count: 1;
 }
+
+
 @keyframes entrada{
     0%{opacity: 0; margin-left: 100%;}
     100%{opacity: 1; margin-left: 0%;}
 }
 .card{
+    font-family: $font-text;
+    font-weight: 600;
     transition: transform 0.9s ease;
     &:hover{
         transform: scale(1.1);

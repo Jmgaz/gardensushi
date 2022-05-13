@@ -8,7 +8,7 @@
     <meta name="description" content="Contactanos para enviarnos tus consultas o sugerencias.">
     <meta name="keywords" content="contacto, sugerencias, garden sushi">
     <meta name="author" content="Juan Martin Carsillo">
-    <title>Contacto Garden Sushi</title>
+    <title>Garden Sushi - Contacto</title>
     <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -17,101 +17,115 @@
 </head>
 
 <body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-light menu">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-    <nav class="navbar navbar-expand-sm navbar-light menu">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
-                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse fw-bold container text-center" id="navbarTogglerDemo01">
-                <a class="navbar-brand" href="#"><img src="../img/logo.png" class="logo" alt="logo"></a>
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item shadow rounded">
-                        <a class="nav-link " aria-current="page" href="../index.html">HOME</a>
-                    </li>
-                    <li class="nav-item shadow rounded">
-                        <a class="nav-link " href="./productos.html">PRODUCTOS</a>
-                    </li>
-                    <li class="nav-item shadow rounded">
-                        <a class="nav-link " href="#">BAR</a>
-                    </li>
-                    <li class="nav-item shadow rounded">
-                        <a class="nav-link " href="./galeria.html">GALERÍA</a>
-                    </li>
-                    <li class="nav-item shadow rounded">
-                        <a class="nav-link " href="./contacto.html">CONTACTO</a>
-                    </li>
-                </ul>
+                <div class="collapse navbar-collapse fw-bold container text-center" id="navbarTogglerDemo01">
+                    <img src="../img/logo.png" class="logo" alt="logo">
+                    <!-- Inicio Menú Header -->
+                    <ul class="navbar-nav me-auto mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item shadow rounded me-2">
+                            <a class="nav-link " aria-current="page" href="../index.html">HOME</a>
+                        </li>
+                        <li class="nav-item shadow rounded me-2">
+                            <a class="nav-link " href="./productos.html">PRODUCTOS</a>
+                        </li>
+                        <li class="nav-item shadow rounded me-2">
+                            <a class="nav-link " href="./bar.html">BAR</a>
+                        </li>
+                        <li class="nav-item shadow rounded me-2">
+                            <a class="nav-link " href="./galeria.html">GALERÍA</a>
+                        </li>
+                        <li class="nav-item shadow rounded">
+                            <a class="nav-link " href="#">CONTACTO</a>
+                        </li>
+                    </ul>
+                    <!-- Fin Menú Header -->
+                    <img src="../img/chef.svg" alt="logo chef" class="img-fluid logo">
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
 
     <main>
-        <h1>GARDEN <span>SUSHI</span></h1>
-        <h2>CONTACTO</h2>
+        <h1>CONTACTO</h1>
 
         <div class="container text-center">
-            
-                <form action="">
-                    <div class="mb-3 mt-3 text-start">
-                        <label for="nombre" class="form-label" >Nombre: </label> 
-                        <input type="text"  name="nombre" id="nombre" placeholder="Nombre" class="form-control">
-                    </div>
-                    <div class="mb-3 text-start">
-                        <label for="apellido" class="form-label">Apellido: </label>
-                        <input type="text" name="apellido" id="apellido" placeholder="Apellido" class="form-control">
-                    </div>
-                    <div class="mb-3 text-start">
-                        <label for="email" class="form-label">Email: </label>
-                        <input type="email" name="email" id="email" placeholder="ejemplo@gmail.com" class="form-control">
-                    </div>
-                    <div class="mb-3 text-start">
-                        <label for="novedades" class="form-check-label">¿Desea recibir las novedades?</label>
-                        <input type="checkbox">
-                    </div>
-                    <div class="mb-3 text-start">
-                        <label for="comentarios">Comentarios:</label>
-                        <textarea name="comentarios" id="comentarios" cols="30" rows="10" placeholder="Comentarios" class="form-control"></textarea>
-                    </div>
-                    <div class="pb-3">
-                        <button type="submit" class="btn btn-success  boton--enviar">Enviar</button>
-                        <button type="reset" class="btn btn-success boton--borrar">Borrar</button>
-                    </div>
-                </form>
-            
+
+            <form action="">
+                <div class="mb-3 mt-3 text-start">
+                    <label for="nombre" class="form-label">Nombre: </label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre" class="form-control">
+                </div>
+                <div class="mb-3 text-start">
+                    <label for="apellido" class="form-label">Apellido: </label>
+                    <input type="text" name="apellido" id="apellido" placeholder="Apellido" class="form-control">
+                </div>
+                <div class="mb-3 text-start">
+                    <label for="email" class="form-label">Email: </label>
+                    <input type="email" name="email" id="email" placeholder="ejemplo@gmail.com" class="form-control">
+                </div>
+                <div class="mb-3 text-start">
+                    <label for="novedades" class="form-check-label">¿Desea recibir las novedades?</label>
+                    <input type="checkbox">
+                </div>
+                <div class="mb-3 text-start">
+                    <label for="comentarios">Comentarios:</label>
+                    <textarea name="comentarios" id="comentarios" cols="30" rows="10" placeholder="Comentarios"
+                        class="form-control"></textarea>
+                </div>
+                <div class="pb-3">
+                    <button type="submit" class="btn btn-success  boton--enviar">ENVIAR</button>
+                    <button type="reset" class="btn btn-success boton--borrar">BORRAR</button>
+                </div>
+            </form>
+
         </div>
+        <!-- Enlace Whatsapp -->
         <nav class="whatsapp">
             <a href="#"><img src="../img/logo_what.png" alt="enlace al whatsapp" class="logoWhat"></a>
         </nav>
+        <!-- Enlace Whatsapp -->
     </main>
 
     <footer>
-
+        <!-- Inicio Menú Footer -->
         <nav>
             <ul class="nav justify-content-center fw-bold">
-                <li class="nav-item border border-3 shadow rounded"><a href="../index.html" class="nav-link link-secondary">HOME</a></li>
-                <li class="nav-item border border-3 shadow rounded"><a href="./productos.html" class="nav-link link-secondary">PRODUCTOS</a></li>
-                <li class="nav-item border border-3 shadow rounded"><a href="./bar.html" class="nav-link link-secondary">BAR</a></li>
-                <li class="nav-item border border-3 shadow rounded"><a href="./galeria.html" class="nav-link link-secondary">GALERÍA</a></li>
-                <li class="nav-item border border-3 shadow rounded"><a href="#" class="nav-link link-secondary">CONTACTO</a></li>
+                <li class="nav-item border border-3 shadow rounded"><a href="../index.html"
+                        class="nav-link link-secondary">HOME</a></li>
+                <li class="nav-item border border-3 shadow rounded"><a href="./productos.html"
+                        class="nav-link link-secondary">PRODUCTOS</a></li>
+                <li class="nav-item border border-3 shadow rounded"><a href="./bar.html"
+                        class="nav-link link-secondary">BAR</a></li>
+                <li class="nav-item border border-3 shadow rounded"><a href="./galeria.html"
+                        class="nav-link link-secondary">GALERÍA</a></li>
+                <li class="nav-item border border-3 shadow rounded"><a href="#"
+                        class="nav-link link-secondary">CONTACTO</a></li>
             </ul>
         </nav>
-
+        <!-- Fin Menú Footer -->
+        <!-- Inicio Redes -->
         <section class="d-flex justify-content-center pt-4">
             <div>
                 <a href=""><img src="../img/logo_fb.png" alt="enlace a facebook garden_sushi_" class="img-fluid"></a>
 
                 <a href="https://www.instagram.com/garden_sushi_/"><img src="../img/logo_ig.png"
-                    alt="enlace a instagram garden_sushi_" class=" img-fluid"></a>
+                        alt="enlace a instagram garden_sushi_" class=" img-fluid"></a>
 
                 <a
-                href="https://l.instagram.com/?u=https%3A%2F%2Fwalink.co%2Fc5eb9c&e=ATNphlVUBK70MUdIhFMDgEzu_LfD5ZN949yofJ6PyCkTBLvMby0jgqO0RWPiThMVh2OfSWhrK0xBXVlX4jELOA&s=1"><img
-                    src="../img/logo_what.png" alt="enlace al whatsapp 3813579607" class=" img-fluid"></a>
+                    href="https://l.instagram.com/?u=https%3A%2F%2Fwalink.co%2Fc5eb9c&e=ATNphlVUBK70MUdIhFMDgEzu_LfD5ZN949yofJ6PyCkTBLvMby0jgqO0RWPiThMVh2OfSWhrK0xBXVlX4jELOA&s=1"><img
+                        src="../img/logo_what.png" alt="enlace al whatsapp 3813579607" class=" img-fluid"></a>
             </div>
         </section>
+        <!-- Fin Redes -->
         <div class="text-center p-4">
             <p>Garden Sushi</p>
             <p>Yerba Buena, Tucumán</p>

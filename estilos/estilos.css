@@ -1,14 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Hurricane&family=Kalam&family=Palanquin+Dark:wght@500&family=Ramabhadra&family=Shadows+Into+Light&display=swap");
 * {
   padding: 0;
   margin: 0;
 }
 
+@-webkit-keyframes colorMenu {
+  from {
+    background-color: #F1F1F1;
+    opacity: 0.2;
+  }
+  to {
+    background-color: #48887aad;
+    opacity: 1;
+  }
+}
+
+@keyframes colorMenu {
+  from {
+    background-color: #F1F1F1;
+    opacity: 0.2;
+  }
+  to {
+    background-color: #48887aad;
+    opacity: 1;
+  }
+}
+
 .menu {
-  background: -webkit-gradient(linear, left top, left bottom, from(#48887A), color-stop(90%, #F1F1F1));
-  background: linear-gradient(#48887A 0%, #F1F1F1 90%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#48887aad), color-stop(90%, #F1F1F1));
+  background: linear-gradient(#48887aad 0%, #F1F1F1 90%);
+}
+
+@media only screen and (min-width: 786px) {
+  .menu a:hover {
+    border-radius: 5px;
+    -webkit-animation-name: colorMenu;
+            animation-name: colorMenu;
+    -webkit-animation-duration: 1.5s;
+            animation-duration: 1.5s;
+    background-color: #48887aad;
+  }
 }
 
 main {
+  background: url(../img/logoBG2.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   background-color: #F1F1F1;
 }
 
@@ -18,14 +56,14 @@ main {
 
 h1 {
   font-size: 50px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: palanquin dark;
   text-align: center;
   color: #48887A;
   padding: 10px 0 10px 0;
 }
 
 h1 span {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-family: courgette;
   font-style: italic;
   color: #7E7E7E;
 }
@@ -34,7 +72,7 @@ h1 span {
   height: 70px;
   position: fixed;
   right: 1%;
-  bottom: 30%;
+  bottom: 10%;
 }
 
 footer {
@@ -48,15 +86,20 @@ footer img {
 
 h2 {
   font-size: 30px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: palanquin dark;
   text-align: center;
   color: #48887A;
   padding: 10px 0 10px 0;
 }
 
+h2 span {
+  font-family: courgette;
+  color: #7E7E7E;
+}
+
 .logo {
-  height: 50px;
-  padding: 5px;
+  height: 60px;
+  padding: 3px;
   -webkit-animation-name: entrada;
           animation-name: entrada;
   -webkit-animation-duration: 5s;
@@ -88,6 +131,8 @@ h2 {
 }
 
 .card {
+  font-family: kalam;
+  font-weight: 600;
   -webkit-transition: -webkit-transform 0.9s ease;
   transition: -webkit-transform 0.9s ease;
   transition: transform 0.9s ease;
@@ -106,10 +151,10 @@ h2 {
 }
 
 .boton--enviar {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: palanquin dark;
 }
 
 .boton--borrar {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-family: courgette;
 }
 /*# sourceMappingURL=estilos.css.map */
