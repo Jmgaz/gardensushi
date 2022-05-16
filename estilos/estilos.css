@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Hurricane&family=Kalam&family=Palanquin+Dark:wght@500&family=Ramabhadra&family=Shadows+Into+Light&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -43,7 +42,7 @@
 }
 
 main {
-  background: url(../img/logoBG2.svg);
+  background: url(../img/logoBG2.svg) center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -66,6 +65,21 @@ h1 span {
   font-family: courgette;
   font-style: italic;
   color: #7E7E7E;
+}
+
+p {
+  font-family: kalam;
+  letter-spacing: 3.5px;
+  font-weight: 600;
+}
+
+p a {
+  color: #48887A;
+  text-decoration: none;
+}
+
+.texto {
+  background-color: #F1F1F180;
 }
 
 .logoWhat {
@@ -102,10 +116,28 @@ h2 span {
   padding: 3px;
   -webkit-animation-name: entrada;
           animation-name: entrada;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+}
+
+.entradaMain {
+  -webkit-animation-name: entrada;
+          animation-name: entrada;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+}
+
+.entradaBar {
+  -webkit-animation-name: entrada;
+          animation-name: entrada;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
 }
 
 @-webkit-keyframes entrada {
@@ -128,11 +160,13 @@ h2 span {
 
 .card {
   font-family: kalam;
+  letter-spacing: 3.5px;
   font-weight: 600;
   -webkit-transition: -webkit-transform 0.9s ease;
   transition: -webkit-transform 0.9s ease;
   transition: transform 0.9s ease;
   transition: transform 0.9s ease, -webkit-transform 0.9s ease;
+  background-color: #F1F1F180;
 }
 
 .card:hover {

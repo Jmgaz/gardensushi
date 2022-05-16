@@ -3,11 +3,12 @@ $color-title-verde: #48887A;
 $color-verde-opaco:#48887aad;
 $color-title-gris: #7E7E7E;
 $color-blanco: #F1F1F1;
+$color-blanco-opaco: #F1F1F180;
 $font-title-1: palanquin dark;
 $font-title-2: courgette;
 $font-text: kalam;
+$letter-space: 3.5px; 
 
-@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Hurricane&family=Kalam&family=Palanquin+Dark:wght@500&family=Ramabhadra&family=Shadows+Into+Light&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -30,7 +31,7 @@ $font-text: kalam;
     } 
 }
 main{
-    background: url(../img/logoBG2.svg);
+    background: url(../img/logoBG2.svg) center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -54,6 +55,22 @@ h1{
         font-style: italic;
         color: $color-title-gris;
     }
+}
+@mixin estilo-texto {
+    font-family: $font-text;
+    letter-spacing: $letter-space;
+    font-weight: 600;
+
+}
+p{
+    @include estilo-texto;
+    a{
+        color: $color-title-verde;
+        text-decoration: none;
+    }
+}
+.texto{
+    background-color: $color-blanco-opaco;
 }
 .logoWhat{
     height: 70px;
@@ -83,25 +100,36 @@ h2{
     height: 60px;
     padding: 3px;
 }
-.logo{
-    @include estilo-logo;
+@mixin entrada {
     animation-name: entrada;
-    animation-duration: 5s;
     animation-iteration-count: 1;
 }
-
+.logo{
+    @include estilo-logo;
+    @include entrada;
+    animation-duration: 5s;
+    
+}
+.entradaMain{
+    @include entrada;
+    animation-duration: 8s;
+}
+.entradaBar{
+    @include entrada;
+    animation-duration: 5s;
+}
 
 @keyframes entrada{
     0%{opacity: 0; }
     100%{opacity: 1;}
 }
 .card{
-    font-family: $font-text;
-    font-weight: 600;
+    @include estilo-texto;
     transition: transform 0.9s ease;
     &:hover{
         transform: scale(1.1);
     }
+    background-color: $color-blanco-opaco;
 }
 
 .boton{
