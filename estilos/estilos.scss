@@ -73,10 +73,10 @@ p{
     background-color: $color-blanco-opaco;
 }
 .logoWhat{
-    height: 70px;
+    height: 50px;
     position: fixed;
     right: 1%;
-    bottom: 10%;
+    bottom: 5%;
 }
 footer{
     background: linear-gradient($color-blanco 0%, $color-title-verde 90% );
@@ -110,13 +110,19 @@ h2{
     animation-duration: 5s;
     
 }
+.entradaMenu{
+    @media only screen and (min-width: 576px){
+        @include entrada;
+        animation-duration: 5s;
+    }
+}
 .entradaMain{
     @include entrada;
     animation-duration: 8s;
 }
 .entradaBar{
     @include entrada;
-    animation-duration: 5s;
+    animation-duration: 6s;
 }
 
 @keyframes entrada{
