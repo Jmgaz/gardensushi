@@ -50,7 +50,7 @@ main {
 }
 
 .carousel img {
-  height: 200px;
+  height: auto;
 }
 
 h1 {
@@ -111,6 +111,24 @@ h2 span {
   color: #7E7E7E;
 }
 
+@-webkit-keyframes entrada {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes entrada {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .logo {
   height: 60px;
   padding: 3px;
@@ -149,24 +167,6 @@ h2 span {
           animation-iteration-count: 1;
   -webkit-animation-duration: 6s;
           animation-duration: 6s;
-}
-
-@-webkit-keyframes entrada {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes entrada {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 .card {

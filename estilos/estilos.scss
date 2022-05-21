@@ -9,16 +9,18 @@ $font-title-2: courgette;
 $font-text: kalam;
 $letter-space: 3.5px; 
 
+// Reset
 *{
     padding: 0;
     margin: 0;
 }
 
-
+// animación a:hover
 @keyframes colorMenu{
     from{background-color:$color-blanco; opacity: 0.2;}
     to{background-color:$color-verde-opaco; opacity: 1;}
 }
+
 .menu{
     background: linear-gradient($color-verde-opaco 0%,$color-blanco 90% );
     @media only screen and (min-width: 786px){
@@ -38,17 +40,14 @@ main{
     background-color: $color-blanco;
 }
 .carousel img{
-    height: 200px;
+    height: auto;
 }
-$estilos:(
-    colores:$color-title-verde,
-    centro: center,
-);
+
 h1{
     font-size: 50px;
     font-family:$font-title-1;
-    text-align: map-get($estilos, centro);
-    color: map-get($estilos, colores);
+    text-align: center;
+    color: $color-title-verde;
     padding: 10px 0 10px 0;
     span{
         font-family: $font-title-2;
@@ -56,6 +55,8 @@ h1{
         color: $color-title-gris;
     }
 }
+
+// mixin p
 @mixin estilo-texto {
     font-family: $font-text;
     letter-spacing: $letter-space;
@@ -96,39 +97,54 @@ h2{
         color: $color-title-gris;
     }
 }
+
+// mixin logos header
 @mixin estilo-logo{
     height: 60px;
     padding: 3px;
 }
+
+// mixin animación de entrada
 @mixin entrada {
     animation-name: entrada;
     animation-iteration-count: 1;
 }
+
+// animación de entrada
+@keyframes entrada{
+    0%{opacity: 0; }
+    100%{opacity: 1;}
+}
+
+// logos header
 .logo{
     @include estilo-logo;
     @include entrada;
     animation-duration: 5s;
     
 }
+
+// animación menú header solo en vista mayor a 576px
 .entradaMenu{
     @media only screen and (min-width: 576px){
         @include entrada;
         animation-duration: 5s;
     }
 }
+
+// animación entrada main del index.html
 .entradaMain{
     @include entrada;
     animation-duration: 8s;
 }
+
+// animación entrada main de bar.html
 .entradaBar{
     @include entrada;
     animation-duration: 6s;
 }
 
-@keyframes entrada{
-    0%{opacity: 0; }
-    100%{opacity: 1;}
-}
+// tarjetas de productos.html
 .card{
     @include estilo-texto;
     transition: transform 0.9s ease;
@@ -138,6 +154,7 @@ h2{
     background-color: $color-blanco-opaco;
 }
 
+//botones del form de contacto.html
 .boton{
     font-weight: 500;
     font-size: large;
