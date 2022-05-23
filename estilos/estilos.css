@@ -49,28 +49,20 @@ main {
   background-color: #F1F1F1;
 }
 
-.carousel img {
-  height: auto;
-}
-
 h1 {
   font-size: 50px;
-  font-family: palanquin dark;
+  font-family: courgette;
   text-align: center;
   color: #48887A;
   padding: 10px 0 10px 0;
-}
-
-h1 span {
-  font-family: courgette;
-  font-style: italic;
-  color: #7E7E7E;
+  font-weight: 600;
 }
 
 p {
-  font-family: kalam;
-  letter-spacing: 3.5px;
+  font-family: roboto, sans-serif;
+  letter-spacing: 1px;
   font-weight: 600;
+  color: #575757;
 }
 
 p a {
@@ -80,6 +72,13 @@ p a {
 
 .texto {
   background-color: #F1F1F180;
+}
+
+.list-group-item {
+  font-family: roboto, sans-serif;
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: #575757;
 }
 
 .logoWhat {
@@ -100,15 +99,10 @@ footer img {
 
 h2 {
   font-size: 30px;
-  font-family: palanquin dark;
-  text-align: center;
-  color: #48887A;
-  padding: 10px 0 10px 0;
-}
-
-h2 span {
   font-family: courgette;
-  color: #7E7E7E;
+  text-align: center;
+  color: #575757;
+  padding: 10px 0 10px 0;
 }
 
 @-webkit-keyframes entrada {
@@ -170,9 +164,10 @@ h2 span {
 }
 
 .card {
-  font-family: kalam;
-  letter-spacing: 3.5px;
+  font-family: roboto, sans-serif;
+  letter-spacing: 1px;
   font-weight: 600;
+  color: #575757;
   -webkit-transition: -webkit-transform 0.9s ease;
   transition: -webkit-transform 0.9s ease;
   transition: transform 0.9s ease;

@@ -1,13 +1,13 @@
 // variables
 $color-title-verde: #48887A;
 $color-verde-opaco:#48887aad;
-$color-title-gris: #7E7E7E;
+$color-title-gris: #575757;
 $color-blanco: #F1F1F1;
 $color-blanco-opaco: #F1F1F180;
 $font-title-1: palanquin dark;
 $font-title-2: courgette;
-$font-text: kalam;
-$letter-space: 3.5px; 
+$font-text: roboto, sans-serif;;
+$letter-space: 1px; 
 
 // Reset
 *{
@@ -39,21 +39,15 @@ main{
     background-attachment: fixed;
     background-color: $color-blanco;
 }
-.carousel img{
-    height: auto;
-}
+
 
 h1{
     font-size: 50px;
-    font-family:$font-title-1;
+    font-family:$font-title-2;
     text-align: center;
     color: $color-title-verde;
     padding: 10px 0 10px 0;
-    span{
-        font-family: $font-title-2;
-        font-style: italic;
-        color: $color-title-gris;
-    }
+    font-weight: 600;
 }
 
 // mixin p
@@ -61,6 +55,7 @@ h1{
     font-family: $font-text;
     letter-spacing: $letter-space;
     font-weight: 600;
+    color: $color-title-gris
 
 }
 p{
@@ -70,8 +65,12 @@ p{
         text-decoration: none;
     }
 }
+// fondo para los textos y cards
 .texto{
     background-color: $color-blanco-opaco;
+}
+.list-group-item{
+    @include estilo-texto;
 }
 .logoWhat{
     height: 50px;
@@ -88,14 +87,10 @@ footer{
 
 h2{
     font-size: 30px;
-    font-family:$font-title-1;
+    font-family:$font-title-2;
     text-align: center;
-    color: $color-title-verde;
+    color: $color-title-gris;
     padding: 10px 0 10px 0;
-    span{
-        font-family: $font-title-2;
-        color: $color-title-gris;
-    }
 }
 
 // mixin logos header
