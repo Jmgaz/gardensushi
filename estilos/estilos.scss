@@ -77,12 +77,13 @@ p{
     height: 50px;
     position: fixed;
     right: 1%;
-    bottom: 5%;
+    bottom: 8%;
 }
 footer{
     background: linear-gradient($color-blanco 0%, $color-title-verde 90% );
     img{
-        height: 25px !important;
+        height: 40px !important;
+        padding-right:25px;
     }
 }
 
@@ -155,14 +156,8 @@ h2{
     font-weight: 500;
     font-size: large;
     letter-spacing: 1px;
-}
-.boton--enviar{
-    @extend .boton;
     font-family: $font-title-1;
 }
-.boton--borrar{
-    @extend .boton;
-    font-family: $font-title-2;
-}
+
 
 

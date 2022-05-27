@@ -85,7 +85,7 @@ p a {
   height: 50px;
   position: fixed;
   right: 1%;
-  bottom: 5%;
+  bottom: 8%;
 }
 
 footer {
@@ -94,7 +94,8 @@ footer {
 }
 
 footer img {
-  height: 25px !important;
+  height: 40px !important;
+  padding-right: 25px;
 }
 
 h2 {
@@ -180,17 +181,10 @@ h2 {
           transform: scale(1.1);
 }
 
-.boton, .boton--enviar, .boton--borrar {
+.boton {
   font-weight: 500;
   font-size: large;
   letter-spacing: 1px;
-}
-
-.boton--enviar {
   font-family: palanquin dark;
-}
-
-.boton--borrar {
-  font-family: courgette;
 }
 /*# sourceMappingURL=estilos.css.map */
