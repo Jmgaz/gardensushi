@@ -49,6 +49,17 @@ main {
   background-color: #F1F1F1;
 }
 
+.img-car {
+  width: 52%;
+  border-radius: 10%;
+}
+
+@media only screen and (min-width: 1200px) {
+  .img-car {
+    width: 40%;
+  }
+}
+
 h1 {
   font-size: 50px;
   font-family: courgette;
@@ -86,6 +97,9 @@ p a {
   position: fixed;
   right: 1%;
   bottom: 8%;
+  -webkit-box-shadow: 5px -5px 5px #48887aad;
+          box-shadow: 5px -5px 5px #48887aad;
+  border-radius: 25px 25px 25px 0px;
 }
 
 footer {
