@@ -190,9 +190,11 @@ h2 {
   background-color: #F1F1F180;
 }
 
-.card:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+@media only screen and (min-width: 786px) {
+  .card:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
 }
 
 .boton {
