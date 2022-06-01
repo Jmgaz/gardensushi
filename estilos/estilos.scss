@@ -15,7 +15,7 @@ $letter-space: 1px;
     margin: 0;
 }
 
-// animación a:hover
+// keyframe animación a:hover
 @keyframes colorMenu{
     from{background-color:$color-blanco; opacity: 0.2;}
     to{background-color:$color-verde-opaco; opacity: 1;}
@@ -136,23 +136,23 @@ h2{
 .entradaMenu{
     @media only screen and (min-width: 576px){
         @include entrada;
-        animation-duration: 5s;
+        animation-duration: 4s;
     }
 }
 
 // animación entrada main del index.html
 .entradaMain{
     @include entrada;
-    animation-duration: 8s;
+    animation-duration: 6s;
 }
 
 // animación entrada main de bar.html
 .entradaBar{
     @include entrada;
-    animation-duration: 6s;
+    animation-duration: 5s;
 }
 
-// tarjetas de productos.html
+// tarjetas de productos.html (hover solo en vista mayor a 786)
 .card{
     @include estilo-texto;
     transition: transform 0.9s ease;

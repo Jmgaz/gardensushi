@@ -155,8 +155,8 @@ h2 {
             animation-name: entrada;
     -webkit-animation-iteration-count: 1;
             animation-iteration-count: 1;
-    -webkit-animation-duration: 5s;
-            animation-duration: 5s;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
   }
 }
 
@@ -165,8 +165,8 @@ h2 {
           animation-name: entrada;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
-  -webkit-animation-duration: 8s;
-          animation-duration: 8s;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
 }
 
 .entradaBar {
@@ -174,8 +174,8 @@ h2 {
           animation-name: entrada;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
-  -webkit-animation-duration: 6s;
-          animation-duration: 6s;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
 }
 
 .card {
