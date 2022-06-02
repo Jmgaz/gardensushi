@@ -132,7 +132,7 @@ h2{
     
 }
 
-// animación menú header solo en vista mayor a 576px
+// animación menú header solo en vista mayor a 576px y solo en index.html
 .entradaMenu{
     @media only screen and (min-width: 576px){
         @include entrada;
